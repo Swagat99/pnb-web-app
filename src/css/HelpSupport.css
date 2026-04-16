@@ -1,0 +1,83 @@
+/* ── COMING SOON CARD (HELP & SUPPORT) ── */
+.coming-soon-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 70vh;
+}
+
+.coming-soon-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+.coming-soon-card:hover {
+    transform: translateY(-5px);
+}
+
+.coming-soon-icon {
+    background: #fdf0f3;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px;
+}
+
+.coming-soon-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.coming-soon-text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.coming-soon-progress {
+    width: 100%;
+    height: 6px;
+    background: #eeeeee;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.coming-soon-progress-bar {
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(90deg, #A20E37, #C62828);
+    border-radius: 3px;
+    animation: progressPulse 2s infinite ease-in-out;
+}
+
+.coming-soon-badge {
+    background: #A20E37;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+@keyframes progressPulse {
+    0% { opacity: 0.7; width: 60%; }
+    50% { opacity: 1; width: 70%; }
+    100% { opacity: 0.7; width: 60%; }
+}

@@ -1,0 +1,328 @@
+/* ── REPORT FILTER CARD ── */
+.tr-filter-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.tr-filter-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.tr-radio-group {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.tr-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* ── FILTER SUB-PANELS ── */
+.tr-filter-sub {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.tr-sub-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tr-sub-field label {
+    font-size: 13px;
+    color: #666;
+}
+
+.tr-custom-select {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.tr-select-arrow {
+    font-size: 10px;
+    color: #999;
+}
+
+/* ── ERROR STATE (Simple) ── */
+.tr-simple-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.tr-error-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #A20E37;
+    margin-bottom: 8px;
+}
+
+.tr-error-desc {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 24px;
+}
+
+.tr-select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    margin-top: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 100;
+    overflow: hidden;
+}
+
+.tr-select-item {
+    padding: 12px 16px;
+    font-size: 13px;
+    color: #333;
+    transition: background 0.1s;
+}
+
+.tr-select-item:hover {
+    background: #fbfbfb;
+}
+
+.tr-select-item.active {
+    background: #fcf0f4;
+}
+
+.tr-submit-btn {
+    background: #A20E37;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 42px; /* matching input heights */
+}
+
+.tr-date-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tr-date-input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+    color: #333;
+    font-family: inherit;
+}
+
+.tr-date-input::placeholder {
+    color: #bbb;
+}
+
+/* Fix for date input appearance */
+.tr-date-input::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+    cursor: pointer;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+    display: none; /* hidden if using native date picker icon */
+}
+
+
+/* ── TABLE CARD ── */
+.tr-table-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tr-table-header {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.tr-search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 250px;
+}
+
+.tr-search-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+}
+
+.tr-search-input::placeholder {
+    color: #ccc;
+}
+
+.tr-btn-download {
+    background: #A20E37;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ── TABLE ── */
+.tr-table-wrapper {
+    overflow-x: auto;
+}
+
+.tr-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tr-table th, .tr-table td {
+    padding: 16px 24px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.tr-table th {
+    color: #333;
+    font-weight: 600;
+}
+
+.sort-arrows {
+    font-size: 10px;
+    color: #ccc;
+    margin-left: 4px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.status-badge.success {
+    color: #52c41a;
+    background: #f6ffed;
+}
+
+/* ── PAGINATION ── */
+.tr-pagination {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 13px;
+}
+
+.tr-page-left span {
+    margin-right: 16px;
+}
+
+.tr-page-select, .tr-goto-input {
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+    outline: none;
+    font-size: 13px;
+}
+
+.tr-goto-input {
+    width: 40px;
+    text-align: center;
+}
+
+.tr-page-right {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.tr-page-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #555;
+    font-size: 13px;
+}
+
+.tr-page-btn:hover {
+    border-color: #A20E37;
+    color: #A20E37;
+}
+
+.tr-page-dots {
+    color: #999;
+    padding: 0 4px;
+}
+
+.tr-page-btn.active {
+    border-color: #A20E37;
+    background: #A20E37;
+    color: #fff;
+}
+
+.tr-page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f9f9f9;
+}
