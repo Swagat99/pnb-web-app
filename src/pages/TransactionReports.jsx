@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getUser, logout, isTokenValid, redirectToHome } from '../auth/authService'
-import { fetchTransactionReports, fetchVPADetails } from '../api/vpaService'
+import { fetchTransactionReports, fetchVPADetails } from '../api/apiService'
 import * as XLSX from 'xlsx'
 
 import pnbLogo from '../assets/pnb-logo.png'

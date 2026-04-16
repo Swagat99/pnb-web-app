@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getUser, logout, startTokenRefresh, stopTokenRefresh, isTokenValid, redirectToHome } from '../auth/authService'
-import { fetchVPAList, fetchVPADetails, fetchCurrentLanguage, fetchLanguageList, generateQRBase64 } from '../api/vpaService'
+import { fetchVPAList, fetchVPADetails, fetchCurrentLanguage, fetchLanguageList, generateQRBase64 } from '../api/apiService'
 import pnbLogo from '../assets/pnb-logo.png'
 import profileImage from '../assets/profile-image.png'
 import '../css/Dashboard.css'

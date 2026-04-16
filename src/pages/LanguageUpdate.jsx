@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getUser, logout, isTokenValid, redirectToHome } from '../auth/authService'
 
-import { updateLanguage, fetchCurrentLanguage, fetchLanguageList, fetchVPADetails } from '../api/vpaService'
+import { updateLanguage, fetchCurrentLanguage, fetchLanguageList, fetchVPADetails } from '../api/apiService'
 import pnbLogo from '../assets/pnb-logo.png'
 import profileImage from '../assets/profile-image.png'
 import '../css/Dashboard.css'
